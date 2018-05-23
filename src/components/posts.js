@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 //Actions
-import { fetchPosts } from '../actions/postActions'
+import { fetchPosts } from '../actions/postActs'
 
 class Posts extends Component { // eslint-disable-line react/prefer-stateless-function
   // constructor(props) { // This is ALWAYS required to create a component level state.  Remember this.
