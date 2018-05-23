@@ -4,7 +4,7 @@ import './App.css';
 
 //Components
 import Posts from './components/posts';
-import SearchForm from './components/searchForm';
+import PostForm from './components/postForm';
 
 class App extends Component {
   render() {
@@ -14,7 +14,7 @@ class App extends Component {
               <img src={logo} className="App-logo" alt="logo" />
               <h1 className="App-title">Welcome to React</h1>
             </header>
-            <SearchForm />
+            <PostForm />
             <hr />
             <Posts />
           </div>
