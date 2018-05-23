@@ -1,5 +1,5 @@
 import {FETCH_EVENTS, SEARCH_EVENTS , DISPLAY_EVENTS} from './types';
-import API_KEY from '../SECRET_KEY_DO_NOT_PUSH.json';
+import API_KEY from '../../SECRET_KEY.json';
 
 export const fetchEvents = () => dispatch => {
   fetch("https://api-endpoint.igdb.com/games/?fields=name,cover,category,genres,rating,summary,platforms,publishers,popularity&order=popularity:desc", {
