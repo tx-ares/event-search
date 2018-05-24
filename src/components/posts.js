@@ -5,16 +5,8 @@ import { connect } from 'react-redux';
 //Actions
 import { fetchPosts } from '../actions/postActs'
 
-class Posts extends Component { // eslint-disable-line react/prefer-stateless-function
-  // constructor(props) { // This is ALWAYS required to create a component level state.  Remember this.
-  //     super(props); //
-  //     this.state = { //
-  //         posts: [] //
-  //     } //
-  // } // - All this.
-
-  // The above is no longer needed because state is being handled in the store now, which is 'Provided' to the Posts component.
-
+class Posts extends Component {
+    
   componentWillMount() { // This runs every time this component is called.
       this.props.fetchPosts();
   }
