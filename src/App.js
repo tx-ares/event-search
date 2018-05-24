@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 //Components
 import CustomNavbar from './components/CustomNavBar';
-import Posts from './components/posts';
-import PostForm from './components/postForm';
+import Posts from './components/views/posts/posts';
+import PostForm from './components/views/posts/postForm';
 import SearchView from './components/views/events/search';
 import PostsView from './components/views/posts/posts'
 
