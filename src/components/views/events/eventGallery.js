@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import {fetchGames} from '../actions/gameActions';
+import {fetchEvents} from '../../../actions/eventActs';
 
 class GameGallery extends Component {
 
     componentWillMount() {
-      this.props.fetchGames()
+      this.props.fetchEvents()
     }
 
     render() {
@@ -31,7 +31,7 @@ class GameGallery extends Component {
   }
 
   GameGallery.propTypes={
-    fetchGames: PropTypes.func.isRequired,
+    fetchEvents: PropTypes.func.isRequired,
     games: PropTypes.array.isRequired
   }
   const mapStateToProps = state => (
@@ -40,5 +40,4 @@ class GameGallery extends Component {
     }
   );
 
-export default connect(mapStateToProps, {fetchGames})(GameGallery);
-  
+export default connect(mapStateToProps, {fetchEvents})(GameGallery);
