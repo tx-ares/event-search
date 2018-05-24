@@ -1,4 +1,4 @@
-import { FETCH_POSTS, NEW_POST } from '../actions/types';
+import { FETCH_POSTS, NEW_POST, SEARCH_EVENTS, DISPLAY_EVENTS } from '../actions/types';
 
 const initialState = { //Exactly what it sounds like.  State before it's changed.
     items: [], // All current posts.
@@ -11,13 +11,13 @@ export default function(state = initialState, action) {
             console.log('Reducer: FETCH_POSTS case is firing')
             return {
                 ...state,
-                items: action.payload // This is coming from postActions.js See the fetch call fetchPosts.
+                items: action.payload // This is coming from postActs.js See the fetch call fetchPosts.
             }
         case NEW_POST:
             console.log('Reducer: FETCH_POSTS case is firing')
             return {
                 ...state,
-                item: action.payload // This is coming from postActions.js See the fetch call for createPost.
+                item: action.payload // This is coming from postActs.js See the fetch call for createPost.
             }
         default:
             return state;
