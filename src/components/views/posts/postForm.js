@@ -4,7 +4,7 @@ import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
 
 //Actions
-import { createPost } from '../actions/postActs'
+import { createPost } from '../../../actions/postActs'
 
 class PostForm extends Component { // eslint-disable-line react/prefer-stateless-function
   constructor(props) { // This is ALWAYS required to create a component level state.  Remember this.
