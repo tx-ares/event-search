@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import SearchBar from './searchBar';
+import SearchBar from '../../searchBar';
 
-import {searchEvents} from '../actions/eventActs';
+import {searchEvents} from '../../../actions/eventActs';
 
 class SearchView extends Component {
 
